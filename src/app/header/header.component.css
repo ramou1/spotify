@@ -1,0 +1,12 @@
+.navbar {
+    padding: 1rem;
+    padding-left: 6.5rem;
+}
+
+.card-img-top {
+    width: 8.3rem !important;
+}
+
+.bg-dark {
+    background-color: #000 !important;
+}
