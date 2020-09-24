@@ -12,6 +12,8 @@ import { PerfilComponent } from './perfil/perfil.component';
 import { NovaPlaylistComponent } from './nova-playlist/nova-playlist.component';
 import { PlayerComponent } from './player/player.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { SidebarLeftComponent } from './sidebar-left/sidebar-left.component';
+import { SidebarRightComponent } from './sidebar-right/sidebar-right.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     CurtidasComponent,
     PerfilComponent,
     NovaPlaylistComponent,
-    PlayerComponent
+    PlayerComponent,
+    SidebarLeftComponent,
+    SidebarRightComponent
   ],
   imports: [
     BrowserModule,
