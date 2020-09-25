@@ -3,6 +3,20 @@
     padding-left: 6.5rem;
 }
 
+.nav-item {
+    padding: 0 15px;
+    font-weight: 600;
+}
+
+a.nav-link {
+    font-size: 0.9rem;
+    color: #fff !important;
+}
+
+a.nav-link:hover {
+    color: #1DB954 !important;
+}
+
 .card-img-top {
     width: 8.3rem !important;
 }
@@ -10,3 +24,12 @@
 .bg-dark {
     background-color: #000 !important;
 }
+
+.form-control {
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 1.2;
+    border: 0;
+    border-radius: 5rem;
+}
+
