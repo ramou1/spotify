@@ -2,3 +2,8 @@
     height: 200px;
     background: #f9f697;
 }
+
+.img-style {
+    width: 100%;
+    height: auto;
+}

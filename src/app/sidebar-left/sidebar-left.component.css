@@ -76,6 +76,10 @@
   .sidebar-navigation .header::before {
     background-color: transparent;
   }
+
+  .sidebar-navigation .playlists {
+    font-weight: 400;
+  }
   
   .content-container {
     padding-left: 220px;
