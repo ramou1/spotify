@@ -1,5 +1,5 @@
 .navbar {
-    padding: 1rem;
+    padding: 1.2rem;
     padding-left: 6.5rem;
 }
 
@@ -32,4 +32,9 @@ a.nav-link:hover {
     border: 0;
     border-radius: 5rem;
 }
+
+.profile-avatar {
+    width: 25px;
+    border-radius: 50%;
+  }
 

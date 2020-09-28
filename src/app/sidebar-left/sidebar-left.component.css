@@ -6,8 +6,9 @@
     overflow-x: hidden;
     overflow-y: auto;
     background: #121212;
-    color: #fff;
+    color: #b3b3b3;
     font-size: 0.9rem;
+    font-weight: 500;
   }
   
   .content-container {
@@ -30,9 +31,9 @@
   }
   
   .sidebar-navigation li a {
-    padding: 10px 15px 10px 30px;
+    padding: 5px 15px 5px 25px;
     display: block;
-    color: #fff;
+    color: #b3b3b3;
   }
   
   .sidebar-navigation li .fa {
@@ -43,7 +44,7 @@
   .sidebar-navigation li a:hover,
   .sidebar-navigation li a:focus {
     text-decoration: none;
-    font-weight: 700;
+    color: #fff;
     outline: none;
   }
   
@@ -66,10 +67,10 @@
   
   .sidebar-navigation .header {
     font-size: 0.7rem;
-    font-weight: 300;
+    font-weight: 400;
     text-transform: uppercase;
     background-color: #121212;
-    padding: 30px 10px 10px 30px;
+    padding: 25px 5px 5px 25px;
   }
   
   .sidebar-navigation .header::before {

@@ -1,31 +1,18 @@
 <div class="sidebar-container">
     <ul class="sidebar-navigation">
         <li class="sidebar-brand">Atividade de amigos</li>
-        <li class="header">SUA BIBLIOTECA</li>
-        <li>
-            <a href="#"> Feito para você </a>
-        </li>
-        <li>
-            <a href="#"> Tocados recentemente </a>
-        </li>
-        <li>
-            <a href="#"> Músicas Curtidas </a>
-        </li>
-        <li>
-            <a href="#"> Álbuns </a>
-        </li>
-        <li>
-            <a href="#"> Artistas </a>
-        </li>
-        <li>
-            <a href="#"> Podcasts </a>
-        </li>
-        <li class="header">PLAYLISTS</li>
-        <li>
-            <a href="#"> Playlist 01 </a>
-        </li>
-        <li>
-            <a href="#"> Playlist 02 </a>
+        <li *ngFor="let atividades of atividade; let i = index;" class="espacamento">
+            <div class="row align-items-center">
+                <div class="col-md-4" style="padding: 0 !important">
+                    <img src="..\assets\imgs\default-profile-picture.png" class="profile-avatar">
+                </div>
+                <div class="col-md-8" style="padding: 0 10px !important">
+                    <a href="#" class="header"> {{atividades.name}} </a>
+                    <a href="#"> {{atividades.music}} </a>
+                    <a href="#"> {{atividades.artist}} </a>
+                    <a href="#"> {{atividades.album}} </a>
+                </div>
+            </div>
         </li>
     </ul>
 </div>
