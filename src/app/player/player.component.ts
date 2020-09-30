@@ -7,9 +7,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PlayerComponent implements OnInit {
 
+  public favorite: boolean = false;
+  public play: boolean = false;
+  public mute: boolean = false;
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  favoriteSong() {
+    this.favorite = !this.favorite;
+  }
+
+  playSong() {
+    this.play = !this.play;
+  }
+
+  muteSong() {
+    this.mute = !this.mute;
   }
 
 }

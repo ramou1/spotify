@@ -28,7 +28,7 @@
               "src/assets/fonts/fonts-fontname.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [ ]
           },
           "configurations": {
             "production": {
