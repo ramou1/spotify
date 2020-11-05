@@ -41,6 +41,43 @@ p {
     padding: 1rem 3rem;
 }
 
+/* editando modal e form */
+
+.modal-header, .modal-footer {
+    border: 0;
+    justify-content: normal;
+}
+
+.modal-content {
+    background-color: #282828 !important;
+    border-radius: .5rem;
+  }
+
+.form-title-label, .form-control {
+    color: #b3b3b3;
+    font-size: 0.8rem;
+}
+
+.btn-verde {
+    background-color: #1DB954;
+    border: 0;
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    padding: 8px 25px;
+    text-transform: uppercase;
+    border-radius: 20px;
+}
+
+.btn-verde:hover {
+    background-color: #1DB954;
+    font-size: 0.75rem;
+}
+
+/* fim da edição da modal e form */
+
+
+
 
 
 /* .container {

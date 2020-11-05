@@ -1,27 +1,78 @@
 <div class="sidebar-container">
-    <ul class="sidebar-navigation">
-      <li class="header">SUA BIBLIOTECA</li>
-      <li>
-        <a href="#"> Feito para você </a>
-      </li>
-      <li>
-        <a href="#"> Tocados recentemente </a>
-      </li>
-      <li>
-        <a href="#"> Músicas Curtidas </a>
-      </li>
-      <li>
-        <a href="#"> Álbuns </a>
-      </li>
-      <li>
-        <a href="#"> Artistas </a>
-      </li>
-      <li>
-        <a href="#"> Podcasts </a>
-      </li>
-      <li class="header">PLAYLISTS</li>
-      <li class="playlists" *ngFor="let playlists of playlist;">
-        <a href="#"> {{playlists.name}} </a>
-      </li>
-    </ul>
-  </div>
+  <ul class="sidebar-navigation">
+    <li class="header">SUA BIBLIOTECA</li>
+    <li>
+      <a href="#"> Feito para você </a>
+    </li>
+    <li>
+      <a href="#"> Tocados recentemente </a>
+    </li>
+    <li>
+      <a href="#"> Músicas Curtidas </a>
+    </li>
+    <li>
+      <a href="#"> Álbuns </a>
+    </li>
+    <li>
+      <a href="#"> Artistas </a>
+    </li>
+    <li>
+      <a href="#"> Podcasts </a>
+    </li>
+    <li class="header">PLAYLISTS</li>
+    <li class="playlists" *ngFor="let playlists of playlist;">
+      <a href="#"> {{playlists.name}} </a>
+    </li>
+  </ul>
+
+  <ng-template #content let-modal class="modal-content"> 
+
+    <div class="modal-header">
+      <h3 class="modal-title text-center">Criar Playlist</h3>
+      <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+
+    <div class="modal-body">
+      <form>
+
+        <div class="form-row">
+
+          <div class="form-group col-md-5">
+            <a href="#">
+              <img src="..\assets\imgs\default-playlist-picture.png" class="card-img-top">
+            </a>
+          </div>
+
+          <div class="form-group col-md-7">
+            <div class="col-md-12 mb-3">
+              <label for="nome" class="form-title-label">Nome</label>
+              <input class="form-control" [(ngModel)]="nova_playlist.nome" type="text" name="nome" id="nome"
+                  placeholder="Minha playlist #1" required>
+          </div>
+          <div class="col-md-12 mb-3">
+            <label for="descricao" class="form-title-label">Descrição</label>
+            <textarea class="form-control" [(ngModel)]="nova_playlist.descricao" name="descricao" id="descricao" rows="3"
+              placeholder="Faça uma descrição sugestiva da sua playlist."></textarea>
+          </div>
+          </div>
+
+        </div>
+
+      </form>
+    </div>
+
+    <div class="modal-footer">
+      <div class="col-md-4"></div>
+       <div class="col-md-4">  <!-- (click)="modal.close('Save click')" -->
+        <button type="button" class="btn btn-dark btn-verde" (click)="criarPlaylist(nova_playlist)">Criar</button>
+      </div>
+      <div class="col-md-4"></div>
+    </div>
+  </ng-template>
+
+  <button class="btn btn-lg btn-outline-primary" (click)="open(content)">+ Nova Playlist</button>
+
+
+</div>
