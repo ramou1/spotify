@@ -14,6 +14,8 @@ import { PlayerComponent } from './player/player.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { SidebarLeftComponent } from './sidebar-left/sidebar-left.component';
 import { SidebarRightComponent } from './sidebar-right/sidebar-right.component';
+import { DetalhesMusicaComponent } from './detalhes-musica/detalhes-musica.component';
+import { DetalhesArtistaComponent } from './detalhes-artista/detalhes-artista.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { SidebarRightComponent } from './sidebar-right/sidebar-right.component';
     NovaPlaylistComponent,
     PlayerComponent,
     SidebarLeftComponent,
-    SidebarRightComponent
+    SidebarRightComponent,
+    DetalhesMusicaComponent,
+    DetalhesArtistaComponent
   ],
   imports: [
     BrowserModule,

@@ -7,6 +7,8 @@ import { NovaPlaylistComponent } from './nova-playlist/nova-playlist.component';
 import { PerfilComponent } from './perfil/perfil.component';
 import { PlayerComponent } from './player/player.component';
 import { RadioComponent } from './radio/radio.component';
+import { DetalhesMusicaComponent } from './detalhes-musica/detalhes-musica.component';
+import { DetalhesArtistaComponent } from './detalhes-artista/detalhes-artista.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -15,7 +17,9 @@ const routes: Routes = [
   {path: 'nova-playlist', component: NovaPlaylistComponent},
   {path: 'perfil', component: PerfilComponent},
   {path: 'player', component: PlayerComponent},
-  {path: 'radio', component: RadioComponent}
+  {path: 'radio', component: RadioComponent},
+  {path: 'detalhes-musica', component: DetalhesMusicaComponent},
+  {path: 'detalhes-artista', component: DetalhesArtistaComponent}
 ];
 
 @NgModule({
